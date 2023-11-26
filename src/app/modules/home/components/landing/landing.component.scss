@@ -1,4 +1,40 @@
-.landing{
-    height:calc(100vh - 64px) ;
+.landing {
+    height: calc(100vh - 64px);
     background-color: var(--header-main-color);
 }
+
+
+/* start features */
+.features {}
+
+.features .main-title::after {
+    content: "";
+    width: 119px;
+    height: 4px;
+    background-color: aqua;
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icons {
+    height: 170px;
+}
+
+.features .icons .number {
+    font-size: 121px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+.features .icons .pencil {
+    color: gray;
+    font-size: 70px;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* end features */
