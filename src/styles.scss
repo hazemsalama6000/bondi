@@ -1,1 +1,77 @@
+:root {
+    --header-main-color: #19283f;
+    --green-color: #33d1cc
+}
+
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./assets//fonts/Roboto-Italic.ttf');
+}
+
+body {
+    height: 1000px;
+}
+
+span,
+p,
+h1,
+h2,
+h3 {
+    font-family: 'roboto';
+    font-weight: 200;
+}
+
+/*start nav style*/
+.navbar {
+    background-color: var(--header-main-color) !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active,
+.navbar-expand-lg .navbar-nav .nav-link:focus,
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search .fa {
+    color: var(--green-color);
+}
+
+.navbar-toggler .fa{
+    color:white;
+    border-color:  white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler[aria-expanded="true"] .fa-bars::before{
+    content: '\f007';
+}
+
+.navbar-toggler {
+border: 1px solid white !important;
+}
+/*end nav style*/
