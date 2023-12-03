@@ -1,1 +1,15 @@
 <router-outlet></router-outlet>
+
+<form [formGroup]="form" (ngSubmit)="submitData(form.value)">
+    <input class="inpu text-only" type="text" formControlName="name">
+    <ng-container *ngIf="form.controls.name?.errors?.required&&form.controls.name.untouched">
+        required
+    </ng-container>
+
+    <ng-container formGroupName="contacts">
+        <input type="text" formControlName="address">
+        <input type="text" formControlName="phone">
+    </ng-container>
+
+    <button type="submit">submit</button>
+</form>
